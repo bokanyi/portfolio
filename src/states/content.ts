@@ -133,21 +133,21 @@ const english: Content = {
       name: "Art gallery",
       tools: ["React", "MUI"],
       description:
-        "- work in group with back-end, sysadmin and tester teams - online gallery, users can register and log in to the site, browse and add artworks to their favorites",
+        "Teamwork with back-end, sysadmin and tester teams. Front-end page for an online gallery, where users can register and log in to the site, browse and add artworks to their favorites, using a museum API to fetch data from artworks.",
       link: "",
     },
     {
       name: "Weather app project",
       tools: ["Angular", " Ionic"],
       description:
-        "web based weather application, user can browse for location and see a 5 day forecast, using a weather API",
+        "This is a web based weather application. User can browse for location and see a 5 day forecast, using a weather API.",
       link: "https://bokanyi.github.io/weather-app-angular/",
     },
     {
       name: "To do app project",
       tools: ["React", "MUI"],
       description:
-        "simple to do list application, users can manage their list, plus a drag and drop feature",
+        "A simple to do list application, where users can manage their list, plus feature a drag and drop to set priority.",
       link: "https://bokanyi.github.io/todo-app-react/",
     },
   ],
@@ -176,8 +176,10 @@ const english: Content = {
 const hungarian: Content = {
   name: "Bokányi Imre",
   position: `Junior Front-end Fejlesztő`,
-  about: `Elhivatott front-end fejlesztő vagyok, holisztikus szemlélettel a és problémamegoldó. Célom a kódolási készségem folyamatos fejlesztése. Az építészekkel, mérnökökkel és művészekkel folytatott 10 éves tapasztalatom segített egy kettős perspektíva kialakításában, ahol kulcsfontosságú a technikai részletek és a nagyvonalú tervezés közötti oszcilláció.
-  Lehetőséget keresek kódolási tapasztalatom bővítésére egy dinamikus cégen belül.`,
+  about: `Elhivatott front-end fejlesztő vagyok, holisztikus szemlélettel és tapasztalt problémamegoldó kézséggel. 
+  Építészként számos szakággal, mérnökökkel és művészekkel folytatott közös munka segített olyan perspektíva kialakításában, ahol kulcsfontosságú a technikai részletek és a nagyvonalú tervezés közötti folyamatos oszcillálás.
+  Új célom a kódolási eszköztáram folyamatos fejlesztése, egy dinamikus, jól strukturált csapaton belül.`,
+
   education: [
     {
       name: "codecool",
@@ -264,21 +266,21 @@ const hungarian: Content = {
       name: "Art gallery",
       tools: ["React", "MUI"],
       description:
-        "- work in group with back-end, sysadmin and tester teams - online gallery, users can register and log in to the site, browse and add artworks to their favorites",
+        "Csapatamunka back-end, sysadmin and tester csapatokkal. Online galéria frontend felületének építése, ahol a felhasználó autentikáció után tud a műalkotások között keresni, egy külső múzeum API adatbázisán keresztül, és az alkotásokat elmenteni saját gyűjteményébe.",
       link: "",
     },
     {
       name: "Weather app project",
       tools: ["Angular", " Ionic"],
       description:
-        "web based weather application, user can browse for location and see a 5 day forecast, using a weather API",
+        "Web alapú időjárás applikáció, a felhasználó lokáció alapján keres, egy időjárás API-t használva 5 napos előrejelzást kapunk a megadott városról.",
       link: "https://bokanyi.github.io/weather-app-angular/",
     },
     {
       name: "To do app project",
       tools: ["React", "MUI"],
       description:
-        "simple to do list application, users can manage their list, plus a drag and drop feature",
+        " Egy egyszerű to do applikáció, melyen menedzselni tudjuk a teendők listáját, időpontok kiválasztásával, priorizálni tudunk egy drag and drop mozdullattal.",
       link: "https://bokanyi.github.io/todo-app-react/",
     },
   ],

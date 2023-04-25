@@ -8,7 +8,7 @@ export const Introduction = () => {
     const content = useGlobal($content)
 
   return (
-    <div>
+    <div >
       <Flex flexDirection="column" justifyContent="center" alignItems="center" py={2}>
         <h1>{content?.name}</h1>
     
