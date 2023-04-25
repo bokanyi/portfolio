@@ -1,7 +1,4 @@
 import { Flex, Progress, Box } from "@chakra-ui/react";
-
-import React from "react";
-
 import useGlobal from "../hooks/useGlobal";
 import { $content } from "../states/content";
 
@@ -17,7 +14,9 @@ export const Skills = () => {
             <p> {skill.name} </p>
             <Box width={"150px"}>
 
-            <Progress value={skill.value*10} size="xs" colorScheme="red" />
+            <Progress value={skill.value*10} size="xs" style={{borderRadius: 5, backgroundColor: "#2424244e"}} 
+            colorScheme="gray" 
+            />
             </Box>
             
           </Flex>
