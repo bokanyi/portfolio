@@ -15,7 +15,7 @@ function App() {
     <Flex
       flexDirection={"column"}
       gap={"1em"}
-      padding={"2em"}
+      padding={["1.2em", "2em"]}
       w={"100%"}
       overflow={"hidden"}
       position={"relative"}
@@ -23,25 +23,33 @@ function App() {
       <Navbar />
 
       <Introduction />
+
       <Contacts />
-      <Skills />
+      
+      <Flex flexDirection={"column"} alignItems={"center"}>
+
+
+      <References />
+
+      <Flex flexDirection={["column", "row"]} gap={[10, 25]} alignItems={["center", "flex-start"]} justifyContent={["center", "space-between"]} flexWrap={"wrap"}>
+
+            <Skills />
+            <Languages />
+            <Education />
+            <Experience />
+      </Flex>
+      </Flex>
 
       <Box
-        w="600px"
-        h="600px"
+        w={["300px","400", "600px",]}
+        h={["300px","400", "600px",]}
         bgGradient={"radial(pink.300, green.200)"}
         borderRadius={"50%"}
         zIndex={"-1"}
-        position={"absolute"}
-        right={"-300px"}
+        position={"fixed"}
+        right={["-150px","-200", "-300px",]}
         filter={"blur(3em) drop-shadow(0px 0px 50px beige) opacity(75%)"}
-        // overflow= {"hidden"}
       />
-
-      <References />
-      <Languages />
-      <Education />
-      <Experience />
     </Flex>
   );
 }

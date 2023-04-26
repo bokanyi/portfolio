@@ -10,7 +10,7 @@ export const Navbar= () => {
 
 
   return (
-    <Flex justifyContent="space-between" alignItems="center" py={2}>
+    <Flex justifyContent="space-between" alignItems="center" py={[0,2]}>
       <Flex gap={2}>
           <Button variant="ghost" onClick={() => switchLanguage("english")}>En</Button>
 

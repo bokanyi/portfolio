@@ -31,6 +31,13 @@ type Reference = {
 };
 
 type Content = {
+    structure:{
+        references: string;
+        skills: string;
+        languages: string;
+        education: string;
+        experience: string;
+    };
   name: string;
   position: string;
   about: string;
@@ -43,6 +50,13 @@ type Content = {
 };
 
 const english: Content = {
+    structure:{
+        references: "References",
+        skills: "Skills",
+        languages: "Languages",
+        education: "Education",
+        experience: "Experience"
+    },
   name: "Imre Bokányi",
   position: `Junior Front-end Developer`,
   about: `I am an enthusiastic front-end developer with a strong holistic approach to problem solving. My aim is to continuously develop my coding skills. My 10 years of experience working with architects, engineers, and artists, has helped me develop a two-fold perspective, where oscillating between technical details and generous design is key.
@@ -137,14 +151,14 @@ const english: Content = {
       link: "",
     },
     {
-      name: "Weather app project",
+      name: "Weather app",
       tools: ["Angular", " Ionic"],
       description:
         "This is a web based weather application. User can browse for location and see a 5 day forecast, using a weather API.",
       link: "https://bokanyi.github.io/weather-app-angular/",
     },
     {
-      name: "To do app project",
+      name: "To do app",
       tools: ["React", "MUI"],
       description:
         "A simple to do list application, where users can manage their list, plus feature a drag and drop to set priority.",
@@ -174,6 +188,13 @@ const english: Content = {
 };
 
 const hungarian: Content = {
+    structure:{
+        references: "Referenciák",
+        skills: "Skillek",
+        languages: "Nyelvtudás",
+        education: "Végzettség",
+        experience: "Tapasztalat"
+    },
   name: "Bokányi Imre",
   position: `Junior Front-end Fejlesztő`,
   about: `Elhivatott front-end fejlesztő vagyok, holisztikus szemlélettel és tapasztalt problémamegoldó kézséggel. 
@@ -270,14 +291,14 @@ const hungarian: Content = {
       link: "",
     },
     {
-      name: "Weather app project",
+      name: "Weather app",
       tools: ["Angular", " Ionic"],
       description:
         "Web alapú időjárás applikáció, a felhasználó lokáció alapján keres, egy időjárás API-t használva 5 napos előrejelzást kapunk a megadott városról.",
       link: "https://bokanyi.github.io/weather-app-angular/",
     },
     {
-      name: "To do app project",
+      name: "To do app",
       tools: ["React", "MUI"],
       description:
         " Egy egyszerű to do applikáció, melyen menedzselni tudjuk a teendők listáját, időpontok kiválasztásával, priorizálni tudunk egy drag and drop mozdullattal.",

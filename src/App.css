@@ -9,6 +9,7 @@
   margin: 0;
   padding: 0;
   font: inherit;
+  /* background-color: #7e7e7e25; */
 }
 
 html {
@@ -18,14 +19,9 @@ html {
 
 body {
   min-height: 100vh;
-  /* font-size: 1em; */
-  font-style: italic ;
   font-family: 'IBM Plex Sans', Helvetica, Arial, sans-serif;
-  
-}
 
-h1{
-   font-size: 3em;
+  
 }
 
 

@@ -18,17 +18,16 @@ export const References = () => {
   const [link, setLink] = useState("");
 
   return (
-    <Flex flexDirection={"column"}>
-      References
+    <Flex flexDirection={"column"} mb={[10,20,40]} >
+      <Box textStyle={'h3'} mb={[10,20,40]}>       {content?.structure.references}
+</Box>
       <Modal isOpen={isOpen} size={"xl"} onClose={onClose} >
         <ModalOverlay
           bg="none"
           backdropFilter="auto"
-          // backdropInvert='80%'
           backdropBlur="2px"
         />
         <ModalContent height={"600px"}>
-          {/* <ModalHeader>{reference.name}</ModalHeader> */}
           <ModalCloseButton background={"green.200"} color={"pink.500"} />
           <ModalBody  mt={4} mb={4}>
             <iframe
@@ -47,16 +46,19 @@ export const References = () => {
           </ModalBody>
         </ModalContent>
       </Modal>
+    <Flex flexDirection={["column","column","row"]} gap={[5, 10, 25]} >
+      
       {content?.reference.map((reference) => {
         return (
-          <Box key={reference.name} gap={"1em"}>
-            <h1>{reference.name}</h1>
-            <p>
-              {reference.description} {reference.tools}
-            </p>
+          <Flex flex='1' flexDirection={"column"} key={reference.name}>
+            <Box textStyle="h2" >{reference.name} </Box>
+            <Box textStyle="h4" >{reference.tools}</Box>
+            <Box>{reference.description}</Box>
 
             {reference.link && (
               <Button
+               alignSelf={["center", "start" ]}
+                my={4}
                 onClick={(e) => {
                   e.preventDefault();
                   if (e.metaKey) {
@@ -69,9 +71,10 @@ export const References = () => {
                 Link
               </Button>
             )}
-          </Box>
+          </Flex>
         );
       })}
+    </Flex >
     </Flex>
   );
 };

@@ -50,7 +50,7 @@ const handleSubmit = (e: React.FormEvent< HTMLFormElement >) => {
 }
 
   return (
-    <Flex flexDirection={"column"} width={"400px"} >
+    <Flex flexDirection={"column"} maxWidth={"340px"} ms={[0, 20]} py={[0, 20]} >
        <Modal isOpen={isOpen} size={"sm"} onClose={onClose} >
         <ModalOverlay
         
@@ -96,8 +96,8 @@ const handleSubmit = (e: React.FormEvent< HTMLFormElement >) => {
           </ModalBody>
         </ModalContent>
       </Modal>
-      <Button onClick={() => onOpen()}> Contact me </Button>
-      <Box >
+      
+      <Flex flexDirection={"column"} gap={1}>
         <Flex gap={"1em"} alignItems={"center"}>
           <EmailIcon />
           <p> {content?.contacts.email}</p>
@@ -114,7 +114,10 @@ const handleSubmit = (e: React.FormEvent< HTMLFormElement >) => {
         <PhoneIcon /> <p> {content?.contacts.tel}</p>
         </Flex>
        
-      </Box>
+      <Button alignSelf={["center","start"]} mt={[4]} onClick={() => onOpen()}> Contact me </Button>
+      </Flex>
+      
+
     </Flex>
   );
 };
