@@ -12,7 +12,7 @@ export const Education = () => {
         </Box>
       {content?.education.map((education) => {
         return (
-          <Box key={education.name} gap={"1em"}>
+          <Box key={education.year} gap={"1em"}>
             <p>  {education.year} </p>
             <h1> {education.name}</h1>
             <p> {education.degree}</p>

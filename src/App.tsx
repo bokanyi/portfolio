@@ -9,6 +9,7 @@ import { Navbar } from "./components/Navbar";
 import { References } from "./components/References";
 import { Skills } from "./components/Skills";
 import { Box } from "@chakra-ui/react";
+import { Hobbies } from "./components/Hobbies";
 
 function App() {
   return (
@@ -26,8 +27,7 @@ function App() {
 
       <Contacts />
       
-      <Flex flexDirection={"column"} alignItems={"center"}>
-
+      <Flex flexDirection={"column"} alignItems={"center"} >
 
       <References />
 
@@ -38,8 +38,11 @@ function App() {
             <Education />
             <Experience />
       </Flex>
+
+      <Hobbies></Hobbies>
       </Flex>
 
+      
       <Box
         w={["300px","400", "600px",]}
         h={["300px","400", "600px",]}

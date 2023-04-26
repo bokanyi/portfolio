@@ -23,6 +23,30 @@ body {
 
   
 }
+.card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: perspective(1000px) rotateY(var(--rotate-y, 0))
+  translateY(var(--translate-y, 0));
+  transition: 150ms;
+  cursor: pointer;
+  transform-style: preserve-3d;
+}
+
+.card.flip {
+  --rotate-y:180deg
+}
+
+.card .front,
+.card .back {
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.card .back{
+  transform: rotateY(180deg);
+}
 
 
 img, picture, svg, video {

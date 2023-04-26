@@ -37,6 +37,7 @@ type Content = {
         languages: string;
         education: string;
         experience: string;
+        hobbies: string;
     };
   name: string;
   position: string;
@@ -55,7 +56,8 @@ const english: Content = {
         skills: "Skills",
         languages: "Languages",
         education: "Education",
-        experience: "Experience"
+        experience: "Experience",
+        hobbies: "Hobbies"
     },
   name: "Imre Bokányi",
   position: `Junior Front-end Developer`,
@@ -145,21 +147,21 @@ const english: Content = {
   reference: [
     {
       name: "Art gallery",
-      tools: ["React", "MUI"],
+      tools: ["React, ", "MUI"],
       description:
         "Teamwork with back-end, sysadmin and tester teams. Front-end page for an online gallery, where users can register and log in to the site, browse and add artworks to their favorites, using a museum API to fetch data from artworks.",
       link: "",
     },
     {
       name: "Weather app",
-      tools: ["Angular", " Ionic"],
+      tools: ["Angular, ", " Ionic"],
       description:
         "This is a web based weather application. User can browse for location and see a 5 day forecast, using a weather API.",
       link: "https://bokanyi.github.io/weather-app-angular/",
     },
     {
       name: "To do app",
-      tools: ["React", "MUI"],
+      tools: ["React, ", "MUI"],
       description:
         "A simple to do list application, where users can manage their list, plus feature a drag and drop to set priority.",
       link: "https://bokanyi.github.io/todo-app-react/",
@@ -193,7 +195,8 @@ const hungarian: Content = {
         skills: "Skillek",
         languages: "Nyelvtudás",
         education: "Végzettség",
-        experience: "Tapasztalat"
+        experience: "Tapasztalat",
+        hobbies: "Hobbi"
     },
   name: "Bokányi Imre",
   position: `Junior Front-end Fejlesztő`,
@@ -285,21 +288,21 @@ const hungarian: Content = {
   reference: [
     {
       name: "Art gallery",
-      tools: ["React", "MUI"],
+      tools: ["React, ", "MUI"],
       description:
         "Csapatamunka back-end, sysadmin and tester csapatokkal. Online galéria frontend felületének építése, ahol a felhasználó autentikáció után tud a műalkotások között keresni, egy külső múzeum API adatbázisán keresztül, és az alkotásokat elmenteni saját gyűjteményébe.",
       link: "",
     },
     {
       name: "Weather app",
-      tools: ["Angular", " Ionic"],
+      tools: ["Angular, ", "Ionic"],
       description:
         "Web alapú időjárás applikáció, a felhasználó lokáció alapján keres, egy időjárás API-t használva 5 napos előrejelzást kapunk a megadott városról.",
       link: "https://bokanyi.github.io/weather-app-angular/",
     },
     {
       name: "To do app",
-      tools: ["React", "MUI"],
+      tools: ["React, ", "MUI"],
       description:
         " Egy egyszerű to do applikáció, melyen menedzselni tudjuk a teendők listáját, időpontok kiválasztásával, priorizálni tudunk egy drag and drop mozdullattal.",
       link: "https://bokanyi.github.io/todo-app-react/",
