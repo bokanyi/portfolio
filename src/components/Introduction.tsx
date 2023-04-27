@@ -1,4 +1,3 @@
-import React from "react";
 import { Flex, Box } from "@chakra-ui/react";
 import useGlobal from "../hooks/useGlobal";
 import { $content } from "../states/content";
@@ -8,11 +7,8 @@ export const Introduction = () => {
 
   return (
     <div>
-      <Flex
-        flexDirection="column"
-        gap={["2em", "4em"]}
-      >
-        <Box textStyle="h1"  my={[5,20]}>
+      <Flex flexDirection="column" gap={["2em", "4em"]}>
+        <Box textStyle="h1" my={[5, 20]}>
           {content?.name}, {content?.position}
         </Box>
 

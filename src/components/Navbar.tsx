@@ -1,6 +1,5 @@
-import React from 'react'
 import { Button, Flex, IconButton } from '@chakra-ui/react'
-import { MoonIcon, SunIcon, ChatIcon } from "@chakra-ui/icons"
+import { MoonIcon, SunIcon } from "@chakra-ui/icons"
 import { useColorMode } from '@chakra-ui/color-mode'
 import {switchLanguage} from '../states/content'
 

@@ -18,18 +18,16 @@ export const References = () => {
   const [link, setLink] = useState("");
 
   return (
-    <Flex flexDirection={"column"} mb={[10,20,40]} >
-      <Box textStyle={'h3'} mb={[10,20,40]}>       {content?.structure.references}
-</Box>
-      <Modal isOpen={isOpen} size={"xl"} onClose={onClose} >
-        <ModalOverlay
-          bg="none"
-          backdropFilter="auto"
-          backdropBlur="2px"
-        />
+    <Flex flexDirection={"column"} mb={[10, 20, 40]}>
+      <Box textStyle={"h3"} mb={[10, 20, 40]}>
+        {" "}
+        {content?.structure.references}
+      </Box>
+      <Modal isOpen={isOpen} size={"xl"} onClose={onClose}>
+        <ModalOverlay bg="none" backdropFilter="auto" backdropBlur="2px" />
         <ModalContent height={"600px"}>
           <ModalCloseButton background={"green.200"} color={"pink.500"} />
-          <ModalBody  mt={4} mb={4}>
+          <ModalBody mt={4} mb={4}>
             <iframe
               style={{
                 // position: "absolute",
@@ -46,35 +44,34 @@ export const References = () => {
           </ModalBody>
         </ModalContent>
       </Modal>
-    <Flex flexDirection={["column","column","row"]} gap={[5, 10, 25]} >
-      
-      {content?.reference.map((reference) => {
-        return (
-          <Flex flex='1' flexDirection={"column"} key={reference.name}>
-            <Box textStyle="h2" >{reference.name} </Box>
-            <Box textStyle="h4" >{reference.tools}</Box>
-            <Box>{reference.description}</Box>
+      <Flex flexDirection={["column", "column", "row"]} gap={[5, 10, 25]}>
+        {content?.reference.map((reference) => {
+          return (
+            <Flex flex="1" flexDirection={"column"} key={reference.name}>
+              <Box textStyle="h2">{reference.name} </Box>
+              <Box textStyle="h4">{reference.tools}</Box>
+              <Box>{reference.description}</Box>
 
-            {reference.link && (
-              <Button
-               alignSelf={["center", "start" ]}
-                my={4}
-                onClick={(e) => {
-                  e.preventDefault();
-                  if (e.metaKey) {
-                    window.open(reference.link, "_blank");
-                  } else {
-                    setLink(reference.link), onOpen();
-                  }
-                }}
-              >
-                Link
-              </Button>
-            )}
-          </Flex>
-        );
-      })}
-    </Flex >
+              {reference.link && (
+                <Button
+                  alignSelf={["center", "start"]}
+                  my={4}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    if (e.metaKey) {
+                      window.open(reference.link, "_blank");
+                    } else {
+                      setLink(reference.link), onOpen();
+                    }
+                  }}
+                >
+                  Link
+                </Button>
+              )}
+            </Flex>
+          );
+        })}
+      </Flex>
     </Flex>
   );
 };

@@ -26,31 +26,34 @@ function App() {
       <Introduction />
 
       <Contacts />
-      
-      <Flex flexDirection={"column"} alignItems={"center"} >
 
-      <References />
+      <Flex flexDirection={"column"} alignItems={"center"}>
+        <References />
 
-      <Flex flexDirection={["column", "row"]} gap={[10, 25]} alignItems={["center", "flex-start"]} justifyContent={["center", "space-between"]} flexWrap={"wrap"}>
+        <Flex
+          flexDirection={["column", "row"]}
+          gap={[10, 25]}
+          alignItems={["center", "flex-start"]}
+          justifyContent={["center", "space-between"]}
+          flexWrap={"wrap"}
+        >
+          <Skills />
+          <Languages />
+          <Education />
+          <Experience />
+        </Flex>
 
-            <Skills />
-            <Languages />
-            <Education />
-            <Experience />
+        <Hobbies></Hobbies>
       </Flex>
 
-      <Hobbies></Hobbies>
-      </Flex>
-
-      
       <Box
-        w={["300px","400", "600px",]}
-        h={["300px","400", "600px",]}
+        w={["300px", "400", "600px"]}
+        h={["300px", "400", "600px"]}
         bgGradient={"radial(pink.300, green.200)"}
         borderRadius={"50%"}
         zIndex={"-1"}
         position={"fixed"}
-        right={["-150px","-200", "-300px",]}
+        right={["-150px", "-200", "-300px"]}
         filter={"blur(3em) drop-shadow(0px 0px 50px beige) opacity(75%)"}
       />
     </Flex>

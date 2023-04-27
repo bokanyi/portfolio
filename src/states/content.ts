@@ -31,14 +31,14 @@ type Reference = {
 };
 
 type Content = {
-    structure:{
-        references: string;
-        skills: string;
-        languages: string;
-        education: string;
-        experience: string;
-        hobbies: string;
-    };
+  structure: {
+    references: string;
+    skills: string;
+    languages: string;
+    education: string;
+    experience: string;
+    hobbies: string;
+  };
   name: string;
   position: string;
   about: string;
@@ -47,18 +47,18 @@ type Content = {
   skills: Skills[];
   reference: Reference[];
   contacts: Contacts;
-  languages: Skills[]
+  languages: Skills[];
 };
 
 const english: Content = {
-    structure:{
-        references: "References",
-        skills: "Skills",
-        languages: "Languages",
-        education: "Education",
-        experience: "Experience",
-        hobbies: "Hobbies"
-    },
+  structure: {
+    references: "References",
+    skills: "Skills",
+    languages: "Languages",
+    education: "Education",
+    experience: "Experience",
+    hobbies: "Hobbies",
+  },
   name: "Imre Bokányi",
   position: `Junior Front-end Developer`,
   about: `I am an enthusiastic front-end developer with a strong holistic approach to problem solving. My aim is to continuously develop my coding skills. My 10 years of experience working with architects, engineers, and artists, has helped me develop a two-fold perspective, where oscillating between technical details and generous design is key.
@@ -94,7 +94,8 @@ const english: Content = {
       year: "2017-2019",
     },
     {
-      company: "Urban Development Department of the Municipality of Budapest Mayor’s Office",
+      company:
+        "Urban Development Department of the Municipality of Budapest Mayor’s Office",
       year: "2015-2016",
     },
   ],
@@ -175,29 +176,29 @@ const english: Content = {
   },
   languages: [
     {
-        name: "hungarian",
-        value: 10
+      name: "hungarian",
+      value: 10,
     },
     {
-        name: "german",
-        value: 6
+      name: "german",
+      value: 6,
     },
     {
-        name: "english",
-        value: 8
+      name: "english",
+      value: 8,
     },
-  ]
+  ],
 };
 
 const hungarian: Content = {
-    structure:{
-        references: "Referenciák",
-        skills: "Skillek",
-        languages: "Nyelvtudás",
-        education: "Végzettség",
-        experience: "Tapasztalat",
-        hobbies: "Hobbi"
-    },
+  structure: {
+    references: "Referenciák",
+    skills: "Skillek",
+    languages: "Nyelvtudás",
+    education: "Végzettség",
+    experience: "Tapasztalat",
+    hobbies: "Hobbi",
+  },
   name: "Bokányi Imre",
   position: `Junior Front-end Fejlesztő`,
   about: `Elhivatott front-end fejlesztő vagyok, holisztikus szemlélettel és tapasztalt problémamegoldó kézséggel. 
@@ -316,28 +317,23 @@ const hungarian: Content = {
   },
   languages: [
     {
-        name: "magyar",
-        value: 10
+      name: "magyar",
+      value: 10,
     },
     {
-        name: "német",
-        value: 6
+      name: "német",
+      value: 6,
     },
     {
-        name: "angol",
-        value: 8
+      name: "angol",
+      value: 8,
     },
-  ]
+  ],
 };
 
 export const $content = new BehaviorSubject<Content | null>(english);
 
-// export const switchLanguage = () => {
-//     if($content.getValue() === english) $content.next(hungarian)
-//     else $content.next(english)
-// }
-
 export const switchLanguage = (language: string) => {
-    if( language === "english") $content.next(english)
-    else $content.next(hungarian)
-}
+  if (language === "english") $content.next(english);
+  else $content.next(hungarian);
+};
