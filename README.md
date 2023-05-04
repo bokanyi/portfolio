@@ -9,6 +9,9 @@
 - short motivation article;
 - progressbar for languages;
 - dark and light mode-ot, automatically to system preferences.
++ hobbies section,
++ contact me button, email verification,
++ print layout,
 
 ## tools libraries 
 

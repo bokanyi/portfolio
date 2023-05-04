@@ -66,7 +66,7 @@ export const Contacts = () => {
   };
 
   return (
-    <Flex flexDirection={"column"} maxWidth={"340px"} ms={[0, 20]} py={[0, 20]}>
+    <Flex flexDirection={"column"} maxWidth={"340px"} ms={[0, 20]} mb={[10]} py={[0, 20]}>
       <Modal isOpen={isOpen} size={"sm"} onClose={onClose}>
         <ModalOverlay bg="none" backdropFilter="auto" backdropBlur="2px" />
         <ModalContent>

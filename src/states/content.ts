@@ -147,6 +147,13 @@ const english: Content = {
   ],
   reference: [
     {
+      name: "Movie reviews",
+      tools: ["React, ", "MongoDB"],
+      description:
+        "The frontend application fetches movies from a movie api, and logged in users can see them, and write reviews. On the backend application these reviews are persisted on a mongo database and they can be queried both by movie and by reviewer through a rest api. Authentication using Google OAuth flow  ",
+      link: "https://mowiereview.netlify.app/",
+    },
+    {
       name: "Art gallery",
       tools: ["React, ", "MUI"],
       description:
@@ -287,6 +294,13 @@ const hungarian: Content = {
     },
   ],
   reference: [
+    {
+      name: "Movie reviews",
+      tools: ["React, ", "MongoDB"],
+      description:
+        "A frontend app egz filmes api-ról kér adatokat és jelenít meg adatokat, ahol a felhasználók bejelentkezés után kereshetnek a filmek között és írhatnak kommentet.  A backend app kezeli az autentikációt a Google Oauth flow-val, elmenti egy mongo adatbázisba a felhasználót és a kommentjeit.",
+      link: "https://mowiereview.netlify.app/",
+    },
     {
       name: "Art gallery",
       tools: ["React, ", "MUI"],

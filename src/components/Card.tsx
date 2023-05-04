@@ -17,7 +17,7 @@ export const Card: FC<Props> = ({ img, description }) => {
     >
       <Image
         className={"front"}
-        src={`src/assets/${img}.png`}
+        src={`../src/images/${img}.png`}
         alt={`${img}`}
         borderRadius={"50%"}
       ></Image>

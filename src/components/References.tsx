@@ -19,8 +19,8 @@ export const References = () => {
 
   return (
     <Flex flexDirection={"column"} mb={[10, 20, 40]}>
-      <Box textStyle={"h3"} mb={[10, 20, 40]}>
-        {" "}
+
+      <Box textStyle={"h3"} ml={10} mb={[0, 20, 40]}>
         {content?.structure.references}
       </Box>
       <Modal isOpen={isOpen} size={"xl"} onClose={onClose}>
@@ -44,10 +44,12 @@ export const References = () => {
           </ModalBody>
         </ModalContent>
       </Modal>
-      <Flex flexDirection={["column", "column", "row"]} gap={[5, 10, 25]}>
+      <Box overflowY={"scroll"} width={["100vw"]} padding={[5, 10,20]} >
+
+      <Flex width={["auto","auto","1600px",]} flexDirection={["column", "column", "row"]} gap={[5, 10, 35]} >
         {content?.reference.map((reference) => {
           return (
-            <Flex flex="1" flexDirection={"column"} key={reference.name}>
+            <Flex flex="1" flexDirection={"column"}  key={reference.name}>
               <Box textStyle="h2">{reference.name} </Box>
               <Box textStyle="h4">{reference.tools}</Box>
               <Box>{reference.description}</Box>
@@ -72,6 +74,7 @@ export const References = () => {
           );
         })}
       </Flex>
+      </Box>
     </Flex>
   );
 };
