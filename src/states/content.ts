@@ -60,7 +60,7 @@ const english: Content = {
     hobbies: "Hobbies",
   },
   name: "Imre Bokányi",
-  position: `Junior Front-end Developer`,
+  position: `Front-end Developer`,
   about: `I am an enthusiastic front-end developer with a strong holistic approach to problem solving. My aim is to continuously develop my coding skills. My 10 years of experience working with architects, engineers, and artists, has helped me develop a two-fold perspective, where oscillating between technical details and generous design is key.
   I’m seeking opportunities to further my hands-on experience in coding within a dynamic company.`,
   education: [
@@ -207,7 +207,7 @@ const hungarian: Content = {
     hobbies: "Hobbi",
   },
   name: "Bokányi Imre",
-  position: `Junior Front-end Fejlesztő`,
+  position: `Front-end Fejlesztő`,
   about: `Elhivatott front-end fejlesztő vagyok, holisztikus szemlélettel és tapasztalt problémamegoldó kézséggel. 
   Építészként számos szakággal, mérnökökkel és művészekkel folytatott közös munka segített olyan perspektíva kialakításában, ahol kulcsfontosságú a technikai részletek és a nagyvonalú tervezés közötti folyamatos oszcillálás.
   Új célom a kódolási eszköztáram folyamatos fejlesztése, egy dinamikus, jól strukturált csapaton belül.`,

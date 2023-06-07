@@ -10,6 +10,11 @@
   font: inherit;
 }
 
+:root {
+  --bg-img-layer: -10;
+  --nav-layer: 10;
+}
+
 html {
   color-scheme: dark light;
 }
@@ -50,8 +55,4 @@ img, picture, svg, video {
   max-width: 100%;
 }
 
-:root {
-  --bg-img-layer: -10;
-  --nav-layer: 10;
-}
 

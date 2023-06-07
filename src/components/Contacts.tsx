@@ -112,15 +112,15 @@ export const Contacts = () => {
       <Flex flexDirection={"column"} gap={1}>
         <Flex gap={"1em"} alignItems={"center"}>
           <EmailIcon />
-          <p> {content?.contacts.email}</p>
+          <p ><a href={`mailto:${content?.contacts.email}`}>{content?.contacts.email}</a> </p>
         </Flex>
         <Flex gap={"1em"} alignItems={"center"}>
           <InfoIcon />
-          <p> {content?.contacts.github}</p>
+          <p> <a href={`https://${content?.contacts.github}`} target="blank"> {content?.contacts.github}</a></p>
         </Flex>
         <Flex gap={"1em"} alignItems={"center"}>
           <LinkIcon />
-          <p> {content?.contacts.linkedIn}</p>
+          <p> <a href={`https://${content?.contacts.linkedIn}`}> {content?.contacts.linkedIn}</a></p>
         </Flex>
         <Flex gap={"1em"} alignItems={"center"}>
           <PhoneIcon /> <p> {content?.contacts.tel}</p>

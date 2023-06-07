@@ -48,7 +48,7 @@ const theme = extendTheme({
       fontWeight: "regular",
     },
     h4: {
-      fontSize: ["1em", "1em", "2em"],
+      fontSize: ["1em", "2em", "em"],
       fontStyle: "normal",
       fontWeight: "regular",
     },

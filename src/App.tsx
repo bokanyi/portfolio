@@ -43,12 +43,12 @@ function App() {
           <Experience />
         </Flex>
 
-        <Hobbies></Hobbies>
+        {/* <Hobbies></Hobbies> */}
       </Flex>
 
       <Box
-        w={["300px", "400", "600px"]}
-        h={["300px", "400", "600px"]}
+        w={["300px", "400px", "600px"]}
+        h={["300px", "400px", "600px"]}
         bgGradient={"radial(pink.300, green.200)"}
         borderRadius={"50%"}
         zIndex={"-1"}
@@ -57,15 +57,27 @@ function App() {
         filter={"blur(3em) drop-shadow(0px 0px 50px beige) opacity(75%)"}
       />
 
+     
       <Box
-        w={["300px", "400", "600px"]}
-        h={["300px", "400", "600px"]}
-        bgGradient={"radial(green.600, pink.500)"}
-        borderRadius={"50%"}
+        w={["100px", "200", "300px"]}
+        h={["100px", "200", "300px"]}
+        bgGradient={"radial(pink.700, cyan.100)"}
+        // borderRadius={"50%"}
         zIndex={"-1"}
         position={"fixed"}
-        bottom={["-50px", "-300", "-400px"]}
-        filter={"blur(5em) drop-shadow(0px 0px 50px beige) opacity(25%)"}
+        bottom={["-10px", "-100", "-150px"]}
+        filter={"blur(4em) drop-shadow(0px 0px 50px beige) opacity(75%)"}
+      />
+       <Box
+        w={["300px", "400px", "600px"]}
+        h={["300px", "400px", "600px"]}
+        bgGradient={"radial(purple.200, green.200)"}
+        // borderRadius={"50%"}
+        zIndex={"-2"}
+        position={"fixed"}
+        left={["-10px", "-100", "-150px"]}
+        bottom={["-50px", "-150", "-300px"]}
+        filter={"blur(4em) drop-shadow(0px 0px 50px beige) opacity(65%)"}
       />
     </Flex>
   );
