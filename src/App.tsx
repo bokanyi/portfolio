@@ -9,7 +9,6 @@ import { Navbar } from "./components/Navbar";
 import { References } from "./components/References";
 import { Skills } from "./components/Skills";
 import { Box } from "@chakra-ui/react";
-import { Hobbies } from "./components/Hobbies";
 
 function App() {
   return (
