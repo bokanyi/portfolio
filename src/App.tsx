@@ -15,7 +15,7 @@ function App() {
     <Flex
       flexDirection={"column"}
       gap={"1em"}
-      padding={["1.2em", "2em"]}
+      padding={["1.2em", "5em"]}
       w={"100%"}
       overflow={"hidden"}
       position={"relative"}

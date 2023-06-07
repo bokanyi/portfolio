@@ -20,7 +20,7 @@ export const References = () => {
   return (
     <Flex flexDirection={"column"} mb={[10, 20, 40]}>
 
-      <Box textStyle={"h3"} ml={10} mb={[0, 20, 40]}>
+      <Box textStyle={"h3"} ml={[5, 20]} mb={[0, 20, 40]}>
         {content?.structure.references}
       </Box>
       <Modal isOpen={isOpen} size={"xl"} onClose={onClose}>
